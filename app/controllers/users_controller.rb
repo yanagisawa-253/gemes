@@ -1,20 +1,20 @@
-class UsersController < ApplicationController
+class CustmersController < ApplicationController
   def show
-    @user = User.find(params[:id])
+    @custmer = Custmer.find(params[:id])
   end
   
   def edit
-    @user = User.find(params[:id])
+    @custmer = Custmer.find(params[:id])
   end
   
   def update
-    @user = User.find(params[:id])
-    @user.update
+    @custmer = Custmer.find(params[:id])
+    @custmer.update
     redirect_to user_path(@user)
   end
   
   private
-  def user_params
-    params.require(:user).permit(:name, :introduction, :image)
+  def custmer_params
+    params.require(:custmer).permit(:name, :introduction, :image)
   end
 end
