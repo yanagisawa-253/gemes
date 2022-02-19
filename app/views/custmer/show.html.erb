@@ -4,11 +4,11 @@
       <!--コンテナに枠線をつける-->
       <div class="user-box ">
         <!--下線部-->
-        <h3 class="user_name"><%= @user.name %></h3>
-        <p><%= @user.introduction %></p>
+        <h3 class="user_name"><%= @custmer.name %></h3>
+        <p><%= @custmer.introduction %></p>
       </div>
       <div class="row">
-        <%= link_to "編集", edit_user_path, class: "btn btn-success" %>
+        <%= link_to "編集", edit_custmer_path, class: "btn btn-success" %>
       </div>
     </div>
   </div>
