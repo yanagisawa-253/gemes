@@ -4,5 +4,5 @@ class Custmer < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
          
-  
+  attachment :image
 end
