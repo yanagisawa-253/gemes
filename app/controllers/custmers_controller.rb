@@ -1,4 +1,5 @@
 class CustmersController < ApplicationController
+  
   def show
     @custmer = Custmer.find(params[:id])
   end
