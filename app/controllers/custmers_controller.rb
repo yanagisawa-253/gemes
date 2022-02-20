@@ -10,8 +10,8 @@ class CustmersController < ApplicationController
   
   def update
     @custmer = Custmer.find(params[:id])
-    @custmer.update
-    redirect_to user_path(@user)
+    @custmer.update(custmer_params)
+    redirect_to custmer_path(@custmer)
   end
   
   private

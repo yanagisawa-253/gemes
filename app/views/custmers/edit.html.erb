@@ -3,16 +3,16 @@
     <div class="col-12 mt-5 mb-5">
       <%= form_with model: @custmer, local:true do |f| %>
       <div class="form_group">
-        <label for="name" class="name_form col-4">名前</label>
+        <label for="name" class="name_form col-4">名前</label></br>
         <%= f.text_field :name %>
       </div>
       <div class="form_group">
-        <label for="introduction" class="introduction_form col-4">自己紹介</label>
+        <label for="introduction" class="introduction_form col-4">自己紹介</label></br>
         <%= f.text_area :introduction %>
       </div>
       <div class="form_group">
-        <label for="image" class="image_form col-4">画像</label>
-        <%= f.attachment_field :image %>
+        <label for="image" class="image_form col-4">画像</label></br>
+        <= f.attachment_field :image %>
       </div>
       <div class="row">
         <%= f.submit "変更する" %>
