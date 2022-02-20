@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-5 mt-5 mb-5 text-center border border-success mx-auto">
+      <!--コンテナに枠線をつける-->
+      <div class="user-box ">
+        <!--下線部-->
+        <h3 class="user_name"><%= @custmer.name %></h3>
+        <p><%= @custmer.introduction %></p>
+      </div>
+      <div class="row">
+        <%= link_to "編集", edit_custmer_path, class: "btn btn-success mx-auto mb-3" %>
+      </div>
+    </div>
+  </div>
+</div>
