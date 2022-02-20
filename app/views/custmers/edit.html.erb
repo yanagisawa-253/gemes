@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <div class="col-12 mt-5 mb-5">
+    <div class="col-8 mt-5 mb-5 text-center border border-success mx-auto">
       <%= form_with model: @custmer, local:true do |f| %>
       <div class="form_group">
         <label for="name" class="name_form col-4">名前</label></br>
@@ -15,7 +15,7 @@
         <= f.attachment_field :image %>
       </div>
       <div class="row">
-        <%= f.submit "変更する" %>
+        <%= f.submit "変更する", class: "btn btn-success mb-3 mx-auto" %>
       </div>
       <% end %>
     </div>
