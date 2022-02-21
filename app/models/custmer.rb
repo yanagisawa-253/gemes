@@ -4,5 +4,12 @@ class Custmer < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
          
-  # attachment :image
+  attachment :image
+  
+  has_many :tasks, dependent: :destroy
+  
+  validates :name, { presence: true, length: { minimum: 2, maximum: 20 } }
+  validates :introduction, { length: { maximum: 250 } }
+  validates :password, presence: true
+  validates :email, presence:true
 end
