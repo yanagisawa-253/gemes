@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_02_20_014436) do
+ActiveRecord::Schema.define(version: 2022_02_21_081613) do
 
   create_table "custmers", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 2022_02_20_014436) do
   end
 
   create_table "tasks", force: :cascade do |t|
-    t.integer "user_id"
+    t.integer "custmer_id"
     t.string "task_name"
     t.text "task_body"
     t.string "task_comment"
